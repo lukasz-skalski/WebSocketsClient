@@ -60,7 +60,7 @@ public class ActivitySettings extends Activity {
 
     public static String pref_get_hostname (Context context){
         String value;
-        value =  PreferenceManager.getDefaultSharedPreferences(context).getString(TAG_HOSTNAME, "192.168.0.20");
+        value =  PreferenceManager.getDefaultSharedPreferences(context).getString(TAG_HOSTNAME, null);
         Log.i(TAG_LOG, "pref_get_hostname() value: " + value);
         return value;
     }
@@ -75,7 +75,7 @@ public class ActivitySettings extends Activity {
 
     public static String pref_get_port_number (Context context){
         String value;
-        value =  PreferenceManager.getDefaultSharedPreferences(context).getString(TAG_PORT_NUMBER, "8080");
+        value =  PreferenceManager.getDefaultSharedPreferences(context).getString(TAG_PORT_NUMBER, null);
         Log.i(TAG_LOG, "pref_get_port_number() value: " + value);
         return value;
     }
@@ -90,7 +90,7 @@ public class ActivitySettings extends Activity {
 
     public static String pref_get_timeout (Context context){
         String value;
-        value =  PreferenceManager.getDefaultSharedPreferences(context).getString(TAG_TIMEOUT, "3000");
+        value =  PreferenceManager.getDefaultSharedPreferences(context).getString(TAG_TIMEOUT, null);
         Log.i(TAG_LOG, "pref_get_timeout() value: " + value);
         return value;
     }
